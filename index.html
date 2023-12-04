@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Availability of Child Care by Connecticut Town</title>
+  <title>A Crisis of Availability: Childcare in Connecticut for Children 0-3 years old</title>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -68,10 +68,10 @@
           <h2>Introduction</h2>
           <p class="lead"> <a href='https://www.middlesexchildren.org/'>The Middlesex Coalition for Children</a> and <a href='http://earlychildhoodalliance.com/'>Connecticut Early Childhood Alliance.</a> has asked us to investigate the availability of child care for children 0-3 years old in each Connecticut town. We were able to create a choropleth map displaying childcare capacity per 100 children by town. The map allows us to see multi-town areas of deficits. These areas are defined as childcare deserts, where there is limited access to childcare in a town and its surrounding towns. This information is important to our community partners as identifying areas of deficits and specifically childcare deserts will give them and Connecticut families a comprehensive understanding of where families are struggling. Moreover, patterns across towns and relationships between capacity and median household income can help the Middlesex Coalition for Children and The Connecticut Early Childcare Alliance predict areas that need more support in developing childcare. Furthermore, we designed an interactive searchable table which will help our community partners and Hartford parents understand child care capacity in each town in Connecticut.</p>
 
-         <iframe title="Percent Change in Children 2011-2021" aria-label="Map" id="datawrapper-chart-wHAmQ" src="https://datawrapper.dwcdn.net/wHAmQ/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="587" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+         <iframe title="Childcare Capacity in Connecticut" aria-label="Map" id="datawrapper-chart-sgJaF" src="https://datawrapper.dwcdn.net/sgJaF/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="597" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
-          <p>ADD CAPTIONS like this -- Figure 1: Explore the <a href="https://datawrapper.dwcdn.net/fdcm0/">interactive chart</a> AND ADD your description of the chart here. Make sure your caption includes a direct link to your published chart or map in case the embed code fails to display.</p>
+          <p>Figure 1: Explore the <"https://www.datawrapper.de/_/sgJaF/?v=2">interactive Map </a> Map shows deficit in red and surplus in green. Gray polygons represent offical towns we do not have capacity data for.</p>
         </div>
       </div>
     </div>
@@ -90,6 +90,10 @@
 
 
  </p>We created an interactive table that highlights the limited towns with surplus child care spots among a sea of deficit. The teal represents a surplus, and the red represents a deficit (100+ spots per 100 kids, 1:1 ration).</p>
+
+​
+<iframe title="Deficits and Surpluses of Childcare Availability by Connecticut Town" aria-label="Table" id="datawrapper-chart-06LTm" src="https://datawrapper.dwcdn.net/06LTm/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="844" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>         
 
 </p>There are instances of a high surplus in childcare capacity in 17 towns, most notably Wilton, Canaan, Oxford, Orange, Old Saybrook, Columbia, Mansfield and Bloomfield. Cananan in particular had a very high surplus of 333 seats per 100 children. Looking through the capacity data, we were able to determine that Cananan had a high capacity made up of many different facilities, not one huge center like I had previously thought. Canaan is surrounded by towns that have high deficits such as North Canaan, Cornwall, Norfolk and Sharon. One potential explanation is that there are many cities in the town to make up for the deficits in the surrounding towns. Families who live in Norfolk may send their children to day care in Canaan since there is more availability. Looking at the state at large, Andover, Lisbon and North Canaan have just 6 slots per 100 children. Going out of town for childcare involves other resources like transportation and time that may not be available for struggling families. Therefore, we can not rely on some towns to have surplus to make up for the deficits in surrounding towns.</p>
          
@@ -110,22 +114,7 @@ Official town names came from the cleaned data, along with center and home capac
 To obtain the total estimated population of children 0-3 years old per town in Connecticut, we downloaded census data from the Social Explorer database. From there, we were able to download census data from the American Community Survey 5-year Estimates (2017-2021) for children ages 0-5 for each town in Connecticut. We imported and cleaned the data and then used the V lookup tool to transpose the population data into the spreadsheet containing the childcare capacity data by town. Since the Social Explorer population data included children 0-5 years and the capacity data from CT Data Was for children 0-3 years old, we divided the population number by ⅗ to estimate the population of children 0-3 years old. In doing so, we assumed that there was an equal number of children of each age thus ⅗ of the population of children 0-5 years old would be a reasonable estimate of the population of children 0-3 years old. To find the childcare capacity of each town per 100 children we used the equation: (capacity/estimated population of children 0-3)*100. We decided to normalize the data this way to make it easier for the reader to understand our calculations. It is easy to visualize the capacity as the number of total childcare seats available for 100 children in each town. 
 The data sourced from CT Data is not complete. Therefore, capacity data for the following towns is unavailable: Bozrah, Bridgewater, Colebrook, Eastford, Franklin, Goshen, Hartland, Morris, and Roxbury Union. These towns are grayed out and unlabeled on the map and interactive table because of the lack of data.</p>
 
-          <img src="sample-zbib1.png" style="width: 100%; margin: 30px 0">
-          <p><i>Image 1: After inserting a URL into the ZBib.org tool, you may need to click the Edit button to manually add missing details.</i></p>
-
-          <img src="sample-zbib2.png" style="width: 100%; margin: 30px 0">
-          <p><i>Image 2: Clicking the Edit button in ZBib allows you to enter or correct missing details, such as the full Website Title.</i></p>
-
-          <p>Below are sample sentences with MLA inline citations that would appear in the body of the data story, followed by the full references that would appear in the bibliography at the bottom:</p>
-
-          <h4>Sample sentences</h4>
-
-          <p>The City of Hartford recently created a housing code that requires the registration of the full names and contact information for all owners of apartment buildings -- including the officers of Limited Liability Corporations (LLCs) -- in order to "close municipal loopholes that allow anonymous slumlords to operate unchecked" (Lurye).</p>
-
-          <p>In most towns, the percentage of high-needs students enrolled in traditional public schools surpasses those enrolled in magnet, charter, and technical schools in the most recent academic year (“Resident Town Export”).</p>
-
-          <p>...later, insert a bibliography at the end of your data story:</p>
-
+         
           <h4>Works Cited:</h4>
 
           <p>Lurye, Rebecca. “New Housing Code in Hartford Would Keep Slumlords from Hiding Behind LLCs.” Hartford Courant, May 31, 2019. <a href='https://www.courant.com/community/hartford/hc-news-hartford-housing-code-20190531-hcke2jo2x5fpdgz75xf4hlv2ki-story.html'>https://www.courant.com/community/hartford/hc-news-hartford-housing-code-20190531-hcke2jo2x5fpdgz75xf4hlv2ki-story.html</a>.</p>
@@ -152,33 +141,8 @@ The data sourced from CT Data is not complete. Therefore, capacity data for the 
           <p>Overall, it is clear that in the State of Connecticut, there is an issue with deficits in childcare availability. In many towns there is not enough childcare for children who need it. Our investigation showed that there is a childcare desert in Windham County, a rural county with a very low childcare capacity. However, the top urban centers in the state have child care deficits as well thus the issue can not strictly be urban vs. rural. Since childcare capacity can be hard to predict, the interactive searchable table can help readers locate specific towns and identify areas of surplus and deficit.</p>
 
 
-          <img src="sample-image.jpg" style="width: 100%; margin: 30px 0">
 
-          <p>Figure 2: Describe your image in a caption, and always credit the source if someone else created it.</p>
-
-          <h4>Quickly Edit and View Changes on Your Local Computer</h4>
-
-          <p>HINT: Instead of slowly making edits on GitHub, you can quickly make edits in your local computer and view them instantly in your browser. Here's a list of steps (in HTML format):
-            <ol>
-              <li>Go to your GitHub repo and select Code > Download Zip and uncompress the folder.</li>
-              <li>Install a free code editor tool. My fav is <a href="https://atom.io">Atom Editor</a> but there are others, too.</li>
-              <li>Open the "index.html" file with your code editor and make edits.</li>
-              <li>In your browser, go to File > Open to view the "index.html" file that is on your local computer.</li>
-              <li>After making some edits in the "index.html" file, save it, and refresh your browser to view changes. Most edits should appear right away.</li>
-              <li>After making multiple edits on your local computer, carefully copy and paste the contents of "index.html" in your online GitHub account, and test your published updates online.
-            </ol>
-          </p>
-
-          <h4>Two Options for Tables</h4>
-
-          <p>If you need to create a table, first try the Datawrapper Tables tool -- see <a href='https://handsondataviz.org/table.html'>HODV Chapter 8</a> -- and embed the results like this:</p>
-
-          <iframe title="Table 1: Suburbs Offer a Small Percentage of Their Seats to Hartford Open Choice Students " aria-label="Table" id="datawrapper-chart-Qrb7J" src="https://datawrapper.dwcdn.net/Qrb7J/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="972"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
-
-          <p>Table 1: Add your standalone caption here.</p>
-
-          <p>A second option is to use the <a href="https://www.tablesgenerator.com/html_tables">Tables Generator HTML tool</a>. Go to File > Import or manually enter your table data, then Generate the HTML code, and paste it here, similar to this sample: </p>
+         
 
           <style type="text/css">
           .tg  {border-collapse:collapse;border-spacing:0;}
