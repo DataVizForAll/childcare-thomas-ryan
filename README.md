@@ -1,5 +1,5 @@
 # dataviz-story-template
-DataVizForAll.org story template using modified Bootstrap
+https://kellymthomas.github.io/Kelly-Practice-Data-Story/
 
 ## Live view (replace with your own published link in Settings > Pages)
 https://kellymthomas.github.io/Kelly-Practice-Data-Story/
